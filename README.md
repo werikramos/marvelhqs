@@ -17,7 +17,10 @@ Single Page Application para uma consulta de quadrinhos Marvel
  [Build](#build)
 
 ## Descrição do Projeto
-A aplicação realiza requisições na [API pública da Marvel](https://developer.marvel.com)<br> e exibe ordenamente por data e ainda é possível filtrar/pesquisar por títulos.
+O sistema consiste em uma tela listando os quadrinhos mais recentes em formato de cards.
+Ao clicar em um quadrinho são exibidas informações detalhadas do quadrinho selecionado.
+Ainda, é possível pesquisar quadrinhos pelo seu título.
+Os dados são requisitados via [API pública da Marvel](https://developer.marvel.com)<br>
 
 ![Print-1](https://github.com/werik-1998/marvelhqs/blob/master/src/assets/img/print1.png)<br>
 ![Print-2](https://github.com/werik-1998/marvelhqs/blob/master/src/assets/img/print2.png)<br>
@@ -42,13 +45,17 @@ As requisições foram centralizadas no [AppService](src/app/app.service.ts) ond
 <b>Testes</b>: Adição de testes ende-to-end;
 
 ## Server de Desenvolvimento
+Necessário ter [Angular CLI](https://www.npmjs.com/package/@angular/cli) instalado.
+
 Execute o comando  `ng serve` para um iniciar um servidor de desenvolvimento. Navegue para `http://localhost:4200/`.<br> O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-`Necessário configurar as keys da API no arquivo`  [environment](src/environments/environment.ts)
+Necessário configurar as keys da API no arquivo  [environment](src/environments/environment.ts)
 
 ## Build
+Necessário ter [Angular CLI](https://www.npmjs.com/package/@angular/cli) instalado.
+
 Execute `ng build` para construir o projeto. Os artefatos de construção serão armazenados no diretório `dist /`.<br> Use o `--prod` para um build de produção.
 
-`Necessário configurar as keys da API no arquivo` [environment.prod](src/environments/environment.prod.ts)
+Necessário configurar as keys da API no arquivo [environment.prod](src/environments/environment.prod.ts)
 
 Projeto gerado com Angular CLI version 11.2.6.
