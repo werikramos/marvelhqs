@@ -15,8 +15,8 @@ Single Page Application para uma consulta de quadrinhos Marvel
 ## Descrição do Projeto
 A aplicação realiza requisições na [API pública da Marvel](https://developer.marvel.com)<br> e exibe ordenamente por data e ainda é possível filtrar/pesquisar por títulos.
 
-![Print-1]()<br>
-![Print-2]()<br>
+![Print-1](https://github.com/werik-1998/marvelhqs/blob/master/src/assets/img/print1.png)<br>
+![Print-2](https://github.com/werik-1998/marvelhqs/blob/master/src/assets/img/print2.png)<br>
 
 ## Construção
 Aplicação foi desenvolvida em [Angular 11](https://angular.io/), baseada no padrão Material Design com uso do [Angular Material](https://material.angular.io/).
