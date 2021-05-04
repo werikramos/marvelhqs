@@ -7,9 +7,13 @@ Single Page Application para uma consulta de quadrinhos Marvel
 ## Tópicos 
 
  [Descrição do projeto](#descrição-do-projeto)
+ 
  [Construção](#construção)
+ 
  [Possíveis Melhorias](#possíveis-melhorias)
+ 
  [Server de Desenvolvimento](#server-de-desenvolvimento)
+ 
  [Build](#build)
 
 ## Descrição do Projeto
