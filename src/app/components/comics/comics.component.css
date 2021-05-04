@@ -1,0 +1,35 @@
+
+.card-content{
+    height: 100%;
+}
+
+
+.comic-title{
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+mat-card:hover .comic-title{
+    color:red
+}
+
+.card-img{
+    width: 100%;
+    height: auto;
+}
+
+
+.form{
+    width: 100%;
+}
+
+.full-width{
+    width: 90%;
+}
+
+.search-btn{
+    width: 8%;
+    margin-left: 2%;
+    background-color: #202020;
+    color:white
+}

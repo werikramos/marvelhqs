@@ -1,0 +1,31 @@
+<div>
+    <h1 style="text-align: center;">COMICS</h1>
+    <mat-divider></mat-divider>
+    <br>
+    <form class="form">
+        <mat-form-field class="full-width">
+            <mat-label>Search</mat-label>
+            <input matInput [(ngModel)]="filter" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+        <button mat-raised-button class="search-btn" (click)="getByTitle(filter)">
+            <span class="material-icons">
+                search
+            </span></button>
+    </form>
+    <mat-divider></mat-divider>
+    <h2 *ngIf="notFound">not found comics with this name...</h2>
+    <mat-grid-list cols="5" rowHeight="1:2">
+        <mat-grid-tile *ngFor="let comic of comics">
+            <mat-card routerLink="/comics-view/{{comic.id}}" appMaterialElevation>
+                <mat-card-content class="card-content">
+                    <img class="card-img" src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}">
+                </mat-card-content>
+                <mat-card-footer>
+                    <h4 class="comic-title">{{comic.title}}</h4>
+                </mat-card-footer>
+            </mat-card>
+
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>

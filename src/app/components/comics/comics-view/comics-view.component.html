@@ -1,0 +1,35 @@
+<div class="content-comic">
+    <mat-divider></mat-divider>
+<br>
+<a href="" class="back">
+    <span class="material-icons" style="vertical-align: middle;">
+        arrow_back
+    </span> Back
+</a>
+<div class="content-item">
+    <div id="l-box">
+        <img class="img" src="{{comic.thumbnail?.path}}.{{comic.thumbnail?.extension}}">
+        <mat-list layout-align="center center"></mat-list>
+    </div>
+    <div id="r-box">
+        <div layout-align="center center">
+            <h1 class="title">{{comic.title}}</h1>
+            <br>
+            <mat-divider></mat-divider>
+            <div>
+                <div *ngFor="let date of comic.dates">
+                    <div *ngIf="date.type =='onsaleDate'"> <strong>Published:</strong>  {{date.date | date}}</div>
+                </div>
+            </div>
+            <div *ngFor="let creator of comic.creators?.items">
+                <strong>{{creator.role | titlecase}}:</strong>
+                {{creator.name}}
+            </div>
+        </div>
+        <br>
+        <p>{{comic.description}}</p>
+        <br>    
+        <mat-divider></mat-divider>
+    </div>
+</div>
+</div>

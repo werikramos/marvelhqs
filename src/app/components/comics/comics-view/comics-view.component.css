@@ -1,0 +1,42 @@
+.content-comic{
+    height: 100%;
+}
+
+.content-item{
+    width: 100%;
+    padding-top: 2%;
+    margin:0;
+}
+
+#l-box {
+    float: left;
+    width: 50%;
+   
+}
+
+#r-box{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.img {
+    width: 60%;
+    height: auto;
+}
+
+.back{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    vertical-align: middle;
+    
+}
+
+.back:hover{
+    color:red
+}
+
+.title {
+    font-weight: bold;
+}
